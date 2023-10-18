@@ -1,0 +1,306 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../font/Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Light.woff2') format('woff2'),
+        url('../font/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Bold.woff2') format('woff2'),
+        url('../font/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Regular.woff2') format('woff2'),
+        url('../font/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: "Montserrat", sans-serif!important;
+    font-size: 14px !important;
+    padding: 0;
+    margin: 0;
+}
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+#header{
+    display: block;
+   background: linear-gradient(to bottom, #fff9d5, #ffffff);
+
+}
+#header .d-flex{
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .d-flex .m-0{
+    padding-left: 10px;
+}
+.address-left{
+    position: relative;
+    padding-left: 20px;
+}
+.pulse-icon{
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    left: 0;
+}
+.pulse-icon .icon-wrap{
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+    color: #7c662f;
+    position: absolute;
+    top: -3px;
+    left: 0px;
+}
+.pulse-icon .element{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.pulse{
+    -webkit-animation: pulse-wave 1s linear infinite both;
+    animation: pulse-wave 1s linear infinite both;
+    border-radius: 50%;
+    position: absolute;
+    }
+    @-webkit-keyframes pulse-wave{0%{opacity:0;-webkit-transform:scale(1);transform:scale(1);}
+        50%{opacity:1;-webkit-transform:scale(2);transform:scale(2);}
+        100%{opacity:0;-webkit-transform:scale(2.7);transform:scale(2.7);}
+}
+    @keyframes pulse-wave{0%{opacity:0;-webkit-transform:scale(1);transform:scale(1);}
+        50%{opacity:1;-webkit-transform:scale(2);transform:scale(2);}
+        100%{opacity:0;-webkit-transform:scale(2.7);transform:scale(2.7);}
+}
+.pulse-1{
+    border: solid 1px #7c662f;
+    width: 14px;
+    height: 14px;
+    top: 4px;
+    left: -1px;
+}
+.position-relative a{
+    background-image: url(banner_26_03_2022_7.jpg);
+    height: 60px;
+    display: block;
+}
+.row .col{
+   width: 50%;
+   padding: 5px;
+   text-align: end;
+}
+.row .col span:hover{
+    color: #eb3f3f  !important;
+
+}
+.row .logo-icon{
+    display: flex;
+    flex-basis: content;
+    padding: 0;
+    align-items: center;
+    margin-left: 15px
+}
+.logo-icon .col{
+    transition: 0.3s ease;
+}
+.logo-icon .col:hover{
+    transform: scale(1.2,1.2);
+}
+.address-left{
+   display: flex;
+   width: 50%;
+}
+.clearifx::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#header .d-flex .row{
+    width: 50%;
+}
+.text-title{
+    background-color: #ffffff;
+    display: flex;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+.header-outer{
+    position: sticky;
+    top: 50px;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 999;
+}
+.header-outer .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-outer .row{
+    width: 100%;
+    margin: 0;
+}
+.container-fluid{
+    max-height: 100px;
+    padding: 0 !important;
+}
+.navbar{
+    width: 100%;
+    max-height: 80px;
+    align-content: center;
+}
+.logo-company{
+    width: 100%;
+    max-width: 100px;
+    display: block
+}
+.navbar-brand{
+    width: 100%;
+    height: 100%;
+    
+}
+.navbar-brand img{
+    width: 100%;
+}
+#mynavbar{
+    width: 70%;
+}
+#mynavbar .nav-item{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#mynavbar ul li a span{
+    color: #f6e48e;
+}
+.nav-link{
+    position: relative;
+}
+#mynavbar ul li a::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #f6e48e;
+    bottom: 1px;
+    left: 0;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+#mynavbar ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.container-fluid .d-flex{
+    width: 30%;
+    padding: 0;
+    max-height: 30px;
+    margin-top: 7px;
+}
+.navbar-nav{
+    width: 100%;
+
+}
+#mynavbar .dropdown-menu{
+    border-top: 2px solid #7c662f !important ;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+.sub-menu > a::after{
+    content: '\f054';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+.dropdown-menu .dropdown-menu:nth-child(2){
+    top: -2px;
+    left: 100%;
+    padding-top: 0;
+    width: 100%;
+}
+.navbar-nav .nav-item:hover >.dropdown-menu{
+    display: block !important;
+}
+.dropdown-menu li:hover >.dropdown-menu:nth-child(2){
+    display: block;
+}
+.dropdown-menu li{
+    text-transform: none;
+    border-bottom: 1px solid rgba(100, 100 , 100, 0.2);
+    padding: 0;
+}
+.dropdown-menu li a{
+    background-color: #000000;
+    color: #f6e48e !important;
+}
+.dropdown-menu  li a:hover{
+    background-color: #000000;
+    font-style: italic;
+    color: #ffffff !important;
+}
+.d-flex .form-control{
+    font-style: italic;
+    border-radius: 4px 0 0 4px;
+    border-color: #7c662f;
+}
+.d-flex .btn{
+    background-color: #7c662f;
+    border: #7c662f;
+    color: #ffffff;
+    border-radius: 0;
+}
+.logo-icon .icon{
+    margin-left: 12px;
+
+}
+.logo-icon .icon i{
+    font-size: 20px;
+    color: #f6e48e;
+}
+.page-container{
+    margin-top: 40px;
+}
+.page-container .home-main{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 245px;
+}
+.categories-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: auto;
+    border-radius: 5px;
+}
